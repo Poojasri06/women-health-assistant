@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  @apply bg-blush-50 text-ink-900 dark:bg-ink-900 dark:text-blush-50 transition-colors duration-200;
+}
+
+h1, h2, h3, .font-display {
+  font-family: "Fraunces", Georgia, serif;
+}
+
+/* Visible keyboard focus ring everywhere, for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid #E8336F;
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #C690D6;
+  border-radius: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.card {
+  @apply bg-white dark:bg-plum-900 rounded-xl2 shadow-card p-5 border border-plum-100 dark:border-plum-800;
+}
+
+.btn-primary {
+  @apply bg-plum-rose text-white px-5 py-2.5 rounded-full font-medium shadow-soft hover:opacity-90 active:scale-[0.98] transition-all duration-150;
+}
+
+.btn-secondary {
+  @apply bg-plum-50 dark:bg-plum-800 text-plum-700 dark:text-plum-100 px-5 py-2.5 rounded-full font-medium hover:bg-plum-100 dark:hover:bg-plum-700 transition-colors duration-150;
+}
+
+.input-field {
+  @apply w-full px-4 py-2.5 rounded-xl border border-plum-200 dark:border-plum-700 bg-white dark:bg-plum-800 text-ink-900 dark:text-blush-50 focus:ring-2 focus:ring-rose-400 focus:border-transparent outline-none transition-all;
+}
