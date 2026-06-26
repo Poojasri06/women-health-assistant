@@ -1,0 +1,11 @@
+Flask==3.0.3
+Flask-SQLAlchemy==3.1.1
+Flask-Cors==4.0.1
+Flask-Login==0.6.3
+Werkzeug==3.0.3
+scikit-learn==1.5.1
+pandas==2.2.2
+numpy==1.26.4
+reportlab==4.2.2
+python-dateutil==2.9.0.post0
+APScheduler==3.10.4
